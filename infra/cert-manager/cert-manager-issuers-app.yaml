@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: cert-manager-issuers
+    namespace: argocd
+    annotations:
+        # Ensure this runs AFTER the cert-manager Helm app (which you can put at wave -5)
+        argocd.argoproj.io/sync-wave: "-4"
+spec:
+    project: default
+    source:
+        repoURL: https://github.com/Axiom-o-Choice/cheerstag-gitops.git
+        targetRevision: main
+        path: infra/cert-manager
+        directory:
+            recurse: true # picks up cluster-issuers.yaml and any other files under the folder
+    destination:
+        server: https://kubernetes.default.svc
+        # Namespace is ignored for cluster-scoped resources like ClusterIssuer, but required by Argo:
+        namespace: argocd
+    syncPolicy:
+        automated:
+            prune: true
+            selfHeal: true
