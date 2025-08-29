@@ -6,7 +6,7 @@ metadata:
 spec:
     project: default
     source:
-        repoURL: https://github.com/$OWNER/$GITOPS_REPO.git
+        repoURL: https://github.com/Axiom-o-Choice/cheerstag-gitops.git
         targetRevision: HEAD
         path: apps/cheerstag-app/base
     destination:
