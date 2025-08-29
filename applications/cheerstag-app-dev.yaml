@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-    name: slot-app-dev
+    name: cheerstag-app-dev
     namespace: argocd
 spec:
     project: default
     source:
         repoURL: https://github.com/$OWNER/$GITOPS_REPO.git
         targetRevision: HEAD
-        path: apps/slot-app/base
+        path: apps/cheerstag-app/base
     destination:
         server: https://kubernetes.default.svc
-        namespace: slot-app
+        namespace: cheerstag-app
     syncPolicy:
         automated:
             prune: true

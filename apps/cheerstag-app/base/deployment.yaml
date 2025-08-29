@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: slot-app
-    namespace: slot-app
+    name: cheerstag-app
+    namespace: cheerstag-app
     labels:
-        app: slot-app
+        app: cheerstag-app
 spec:
     replicas: 1
     selector:
         matchLabels:
-            app: slot-app
+            app: cheerstag-app
     template:
         metadata:
             labels:
-                app: slot-app
+                app: cheerstag-app
         spec:
             containers:
                 - name: web

@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: slot-app
-    namespace: slot-app
+    name: cheerstag-app
+    namespace: cheerstag-app
 spec:
     selector:
-        app: slot-app
+        app: cheerstag-app
     ports:
         - name: http
           port: 80
