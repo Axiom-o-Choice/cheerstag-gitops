@@ -5,8 +5,12 @@ metadata:
     namespace: cheerstag-app
     annotations:
         kubernetes.io/ingress.class: nginx
-        # IMPORTANT: no TLS annotations; we want HTTP only for now
+        cert-manager.io/cluster-issuer: letsencrypt-staging
 spec:
+    tls:
+        - hosts:
+              - www.cheerstag.nl
+          secretName: cheerstag-app-tls
     rules:
         - host: www.cheerstag.nl
           http:
