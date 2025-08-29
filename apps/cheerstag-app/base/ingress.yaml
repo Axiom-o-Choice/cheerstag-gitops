@@ -10,9 +10,20 @@ spec:
     tls:
         - hosts:
               - www.cheerstag.nl
+              - cheerstag.nl
           secretName: cheerstag-app-tls
     rules:
         - host: www.cheerstag.nl
+          http:
+              paths:
+                  - path: /
+                    pathType: Prefix
+                    backend:
+                        service:
+                            name: cheerstag-app
+                            port:
+                                number: 80
+        - host: cheerstag.nl
           http:
               paths:
                   - path: /
