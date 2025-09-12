@@ -17,18 +17,18 @@ spec:
         - host: www.cheerstag.nl
           http:
               paths:
-                  - path: /
-                    pathType: Prefix
-                    backend:
-                        service:
-                            name: cheerstag-app
-                            port:
-                                number: 80
                   - path: /api
                     pathType: Prefix
                     backend:
                         service:
                             name: cheerstag-api
+                            port:
+                                number: 80
+                  - path: /
+                    pathType: Prefix
+                    backend:
+                        service:
+                            name: cheerstag-app
                             port:
                                 number: 80
         - host: cheerstag.nl
