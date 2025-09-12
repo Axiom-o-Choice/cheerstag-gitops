@@ -33,5 +33,5 @@ spec:
                       - name: MONGODB_URI
                         valueFrom:
                             secretKeyRef:
-                            name: mongo-conn # <- SealedSecret.name
-                            key: MONGODB_URI # <- key inside the Secret
+                                name: mongo-conn # <- SealedSecret.name
+                                key: MONGODB_URI # <- key inside the Secret
