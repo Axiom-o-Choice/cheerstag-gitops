@@ -4,7 +4,7 @@ kind: SealedSecret
 metadata:
     creationTimestamp: null
     name: mongo-conn
-    namespace: cheerstag-app
+    namespace: cheerstag-api
 spec:
     encryptedData:
         MONGODB_URI: AgASM3RVi7Zkm3g8bSKw7H5PqN0mrRGQUFRzvy8cxHnVvO/dQkJ97VQxnVArrYFU6szZtHcfjX9LMhAG20IBd+zwcLsmwsNzs4OpEyC0aFJFYSL/SLJErpUraOf1xpb54tgsP9IlnTkrMyTdKCJdF/QllkRrxwtB4eZGROWBvNzkzOhAp5wVQS/FcKlK7f01N7LTn/qrequBI7pM1C1lWwmL9gSLYrKwcSgutkPEO+aV6Md8v2j3iJOgAYBM9qcodMWWTNQF6DArth3xMCOLbZEbSR2MDjeNtU6dwy8NUjSDKaXO43OyBR4MUtVEIu98VDXuBtV84cUe2ULz/BZU1NADNVJtgWkV8BfBe5eth5AVVcKPBVOUwHKvZXnoLMRcFaZImfr20aZGJrBqFdb6C9IWfqR9IJqfsJJw6//Yr7SewbQddTcdeBFaaCJqgGuAx2UfnuLR0UCycDYWXxJSTGSNJHAZ19InR3rRMKBpUCF2bPGJojEMh2dVKASrJRpU6GHYmoLoTDar2tEbTwMgYG834RHkNWYoWwhcdFtCiR/Dm108MKLvKdyCDaRbqmMPAekIZkl5HLS3bXIur4caqg0wXE+5+wTFMSWzsYHWyZ7BRt0eE3sxxmTggxbkxB/OlB2sN7lP3NIea+nFeZJ6xypXjefS+n5tWXuADZ37H1R2FXNGPyqOtQCNsZTP3OZlhp2wT8DTKBBUsz/fNORDILofUSOjtIUIeu8CuRtdXSVmm80znO8893l2y0O5bnCNg/5CZLgnhnyPSqVMnnWuxNx4GiUyRKwhAtr0ZB3eR6tua2VxiRhLjh73rpF0Zcc9bdWrUUvk+B3iJRHTUcyncFb+nQbt18pNcErofyOV
@@ -12,5 +12,5 @@ spec:
         metadata:
             creationTimestamp: null
             name: mongo-conn
-            namespace: cheerstag-app
+            namespace: cheerstag-api
         type: Opaque
