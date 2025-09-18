@@ -17,7 +17,7 @@ spec:
         spec:
             containers:
                 - name: api
-                  image: ghcr.io/axiom-o-choice/cheerstag-api:da8f06da664eb5b7464ebd66eca46141d76e123f
+                  image: ghcr.io/axiom-o-choice/cheerstag-api:3282ccd31c91c3ae293b2f655ffba442521f9a65
                   imagePullPolicy: Always
                   ports:
                       - containerPort: 3000
