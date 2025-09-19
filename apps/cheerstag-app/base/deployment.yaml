@@ -17,7 +17,7 @@ spec:
         spec:
             containers:
                 - name: web
-                  image: ghcr.io/axiom-o-choice/cheerstag-app:5cfcb622b8d283c0b3faaca7a891c0f7ead28367
+                  image: ghcr.io/axiom-o-choice/cheerstag-app:f1e22d8bac55f5f0bcc1e4d1eddca8fbf6db43c5
                   imagePullPolicy: Always
                   ports:
                       - containerPort: 80
