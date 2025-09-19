@@ -1,0 +1,5 @@
+resources:
+    - ../../base
+image:
+    - name: ghcr.io/axiom-o-choice/cheerstag-api
+      digest: sha256:da8f06da664eb5b7464ebd66eca46141d76e123f
